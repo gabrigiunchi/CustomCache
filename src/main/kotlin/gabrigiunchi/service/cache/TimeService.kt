@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service
 import java.time.Instant
 
 @Service
-class FooService {
+class TimeService {
 
     fun getTimestamp(): Instant {
         logger.info("Calculating timestamp")
@@ -13,6 +13,6 @@ class FooService {
     }
 
     companion object {
-        private val logger = LoggerFactory.getLogger(FooService::class.java)
+        private val logger = LoggerFactory.getLogger(TimeService::class.java)
     }
 }
